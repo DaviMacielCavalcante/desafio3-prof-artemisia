@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: desafio3
+    env: docker
+    buildCommand: |
+      docker build -t desafio3:dev .
+    plan: free
