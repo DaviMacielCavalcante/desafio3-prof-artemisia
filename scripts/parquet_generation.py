@@ -20,5 +20,3 @@ def parquet_generator():
     df_annual_2000_2024 = df_annual_2000_2024.sort("YEAR")
 
     df_annual_2000_2024.write.mode("overwrite").partitionBy("YEAR").parquet("./datalake/raw")
-
-    return "Success"
