@@ -28,6 +28,7 @@ jobs:
       - name: Run tests
         run: |
           pytest
-          - name: Testar com Cobertura
-          run: pytest --cov=scripts
+
+      - name: Testar com Cobertura
+        run: pytest --cov=scripts
         
