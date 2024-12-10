@@ -3,7 +3,6 @@ FROM python:3.12.8-bookworm
 WORKDIR /app
 
 COPY requirements.txt requirements.txt
-COPY dataset/ /app/dataset/
 COPY scripts/ /app/scripts/
 COPY datalake/ /app/datalake
 
@@ -15,5 +14,5 @@ RUN pip install -r requirements.txt
 
 EXPOSE 8000
 
-CMD ["sh", "-c","python scripts/parquet_generation.py && scripts/pipeline_etl.py; tail -f /dev/null"]
+CMD ["sh", "-c","python scripts/pipeline_etl.py; tail -f /dev/null"]
 
