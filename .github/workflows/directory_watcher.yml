@@ -24,3 +24,11 @@ jobs:
 
       - name: Execute ETL
         run: python main.py
+
+      - name: Commit Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add datalake/silver/*
+          git commit -m "Atualização da camada silver"
+          git push
