@@ -3,11 +3,11 @@ name: Directory Watcher
 on:
   push:
     paths:
-      - "../../datalake/raw/**"
+      - "datalake/raw/**"
 
 jobs:
-  directory_Watcher:
-    runs_on: ubuntu-latest
+  directory_watcher:
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Code
@@ -16,11 +16,11 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.10
+          python-version: "3.11"
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: |
           pip install -r requirements.txt
 
-      - name: ETL
-        run: main.py
+      - name: Execute ETL
+        run: python main.py
