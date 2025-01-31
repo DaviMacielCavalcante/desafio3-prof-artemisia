@@ -42,11 +42,21 @@ Run tests to validate transformations and pipeline integrity:
 pytest tests/
 ```
 4. Push changes to trigger the CI/CD workflow and deploy the pipeline:
+
+The workflow will try to deploy the new docker image in render.
+
 ```
 git add .
 git commit -m "Deploying ingestion pipeline"
 git push origin main
 ```
+
+5. Don't stray from the path to the dark side:
+
+<div align="center">  
+<img src="https://i.imgur.com/bdWG6NS.gif" width="500"/>  
+</div>  
+
 ## Contribution Guidelines
 
 We welcome contributions! Follow these steps:
@@ -61,6 +71,17 @@ We welcome contributions! Follow these steps:
 
 5. Open a pull request for review.
 
-## License
+## **Contact:**  
+If you have any questions or issues, feel free to contact:  
+📧 Email: **davicc@outlook.com.br**  
 
-This project is licensed under the MIT License - see LICENSE.md for details.
+## **Sith Lords Responsible for the Project:**  
+- **Darth Davi** ⚔️😡  
+
+## **Mentor Who Proposed the Challenge:**  
+[Prof. Artemisia Weyl](https://www.linkedin.com/in/arteweyl/)  
+
+👩‍💻 Mentor’s GitHub: [https://github.com/arteweyl](https://github.com/arteweyl)  
+
+*Through victory, my chains are broken.  
+The Force shall free me.*
